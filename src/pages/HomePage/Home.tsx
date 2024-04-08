@@ -170,7 +170,7 @@ const Home = () => {
                                                 fontSize: '1.1rem',
                                             },
                                         }}>
-                                        SerieFLIX ofrece una experiencia de entretenimiento personalizada. Con funciones como recomendaciones personalizadas y perfiles de usuario individuales, la plataforma se adapta a tus preferencias y te sugiere contenido que probablemente te encantará. Ya sea que te gusten los dramas emocionantes, las comedias ligeras o los documentales informativos, SerieFLIX tiene algo para ti.
+                                        SerieFLIX ofrece una experiencia de entretenimiento personalizada. Con funciones como recomendaciones personalizadas y perfiles de usuario individuales, la plataforma se adapta a tus preferencias.
                                     </Typography>
                                 </Grid>
                             </Box>
@@ -224,7 +224,7 @@ const Home = () => {
                                                 fontSize: '1.1rem',
                                             },
                                         }}>
-                                        Disfruta de una calidad de transmisión superior con SerieFLIX. La plataforma utiliza tecnología de vanguardia para ofrecer contenido en alta definición y, en algunos casos, incluso en resolución 4K. Con una conexión a Internet estable, puedes sumergirte en una experiencia de visualización inmersiva y cristalina desde la comodidad de tu hogar.
+                                        Disfruta de una calidad de transmisión superior con SerieFLIX. La plataforma utiliza tecnología de vanguardia para ofrecer contenido en alta definición y, en algunos casos, incluso en resolución 4K.
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={12} md={5} sx={{
@@ -318,7 +318,7 @@ const Home = () => {
                                                 fontSize: '1.1rem',
                                             },
                                         }}>
-                                        Con SerieFLIX, puedes acceder a tu contenido favorito desde una variedad de dispositivos. Ya sea que prefieras ver en tu televisor inteligente, computadora portátil, tableta o teléfono inteligente, SerieFLIX te brinda la flexibilidad para disfrutar del entretenimiento dondequiera que estés. Además, puedes continuar viendo desde donde lo dejaste en cualquier dispositivo, lo que te permite una transición perfecta entre pantallas.
+                                        Con SerieFLIX, puedes acceder a tu contenido favorito desde una variedad de dispositivos. Ya sea que prefieras ver en tu televisor inteligente, computadora portátil, tableta o teléfono inteligente.
                                     </Typography>
                                 </Grid>
                             </Box>
@@ -375,7 +375,7 @@ const Home = () => {
                                 },
                             }}
                         >
-                            Para empezar a disfrutar del vasto catálogo de SeriesFlix, simplemente visita nuestro sitio web o descarga nuestra aplicación móvil desde la tienda de aplicaciones correspondiente a tu dispositivo. Una vez que te hayas registrado o iniciado sesión en tu cuenta, podrás navegar por nuestras categorías, buscar tus series favoritas o descubrir nuevos títulos para ver.
+                            Para empezar a disfrutar del vasto catálogo de SeriesFlix, simplemente visita nuestro sitio web o descarga nuestra aplicación móvil desde la tienda de aplicaciones correspondiente a tu dispositivo. Una vez que te hayas registrado o iniciado sesión en tu cuenta, podrás navegar por nuestras categorías, buscar tus series favoritas.
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
@@ -407,7 +407,7 @@ const Home = () => {
                                 },
                             }}
                         >
-                            Ofrecemos una variedad de opciones de suscripción para adaptarnos a las necesidades de nuestros usuarios. Nuestras suscripciones pueden incluir acceso ilimitado a nuestro catálogo completo de series, la capacidad de ver en múltiples dispositivos simultáneamente, descargas offline para ver sin conexión a internet, y contenido en calidad HD o incluso Ultra HD, dependiendo del plan seleccionado.
+                             Nuestras suscripciones pueden incluir acceso ilimitado a nuestro catálogo completo de series, la capacidad de ver en múltiples dispositivos simultáneamente, descargas offline para ver sin conexión a internet, y contenido en calidad HD.
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
@@ -439,7 +439,7 @@ const Home = () => {
                                 },
                             }}
                         >
-                            Sí, entendemos que compartir experiencias de entretenimiento es importante. SerieFlix permite que los usuarios compartan sus cuentas con familiares o amigos, dependiendo del plan de suscripción seleccionado. Sin embargo, es importante recordar que la cantidad de dispositivos simultáneos permitidos puede variar según el plan, por lo que es importante revisar los detalles de tu suscripción.
+                            Sí, entendemos que compartir experiencias de entretenimiento es importante. SerieFlix permite que los usuarios compartan sus cuentas con familiares o amigos, dependiendo del plan de suscripción seleccionado. Sin embargo, es importante recordar que la cantidad de dispositivos simultáneos permitidos puede variar según el plan.
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
@@ -471,7 +471,7 @@ const Home = () => {
                                 },
                             }}
                         >
-                            SerieFlix ofrece la conveniente opción de descargar contenido para verlo más tarde, sin necesidad de una conexión a internet. Para descargar un episodio o película, simplemente navega hasta el título que deseas ver, y busca el ícono de descarga. Una vez descargado, podrás acceder a ese contenido en tu dispositivo móvil, tablet u otro dispositivo compatible, incluso cuando no estés conectado a internet.
+                             Para descargar un episodio o película, simplemente navega hasta el título que deseas ver, y busca el ícono de descarga. Una vez descargado, podrás acceder a ese contenido en tu dispositivo móvil, tablet u otro dispositivo compatible.
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
@@ -503,7 +503,7 @@ const Home = () => {
                                 },
                             }}
                         >
-                            En SerieFlix, nos tomamos muy en serio la privacidad y seguridad de nuestros usuarios. Implementamos medidas de seguridad avanzadas para proteger la información personal y los datos de nuestros usuarios, incluyendo cifrado de extremo a extremo, protección contra accesos no autorizados, y políticas estrictas de privacidad que cumplen con las regulaciones vigentes. Además, ofrecemos opciones de configuración de privacidad para que los usuarios controlen cómo se utilizan sus datos dentro de la plataforma.
+                            Implementamos medidas de seguridad avanzadas para proteger la información personal y los datos de nuestros usuarios, incluyendo cifrado de extremo a extremo, protección contra accesos no autorizados, y políticas estrictas de privacidad que cumplen con las regulaciones vigentes.
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
