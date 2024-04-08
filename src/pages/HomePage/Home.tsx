@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import theme from "../../../theme";
 import { BackgroundImageStyle, ListItemMovies, Navbar, Footer } from "../../components";
-import { Box, Typography, Button, Grid, Accordion, AccordionSummary, AccordionDetails, Divider } from "@mui/material";
+import { Box, Typography, Button, Grid, Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import styles from './HomeStyle.module.css';
 
