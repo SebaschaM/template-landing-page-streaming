@@ -7,6 +7,7 @@ declare module "@mui/material/styles" {
     sm: true;
     customBreak1: true;
     md: true;
+    customBreak3: true;
     lg: true;
     xl: true;
   }
@@ -40,6 +41,7 @@ const theme = createTheme({
       sm: 600,
       customBreak1: 820,
       md: 960,
+      customBreak3: 1200,
       lg: 1280,
       xl: 1920,
     },
@@ -66,7 +68,7 @@ const theme = createTheme({
       color: "white",
     },
     h5: {
-      fontSize: "1.25rem",
+      fontSize: "1.2rem",
       color: "black",
       fontWeight: 700,
     },

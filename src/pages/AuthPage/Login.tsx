@@ -27,7 +27,7 @@ const Login = () => {
             <Navbar />
             <Container
                 sx={{
-                    marginTop: '8rem',
+                    marginTop: '2rem',
                 }}
             >
                 <FormControl
@@ -37,40 +37,45 @@ const Login = () => {
                         margin: 'auto',
                         display: 'flex',
                         flexDirection: 'column',
-                        width: '35rem',
+                        width: '21rem',
                     }}
                 >
                     <Card sx={{
                         padding: '2rem',
                     }}>
-                        <Typography variant="h3" sx={{ textAlign: 'center', color: 'black', marginBottom: '3rem', textTransform: 'uppercase' }}>
+                        <Typography variant="h4" sx={{ textAlign: 'center', color: 'black', marginBottom: '1.7rem', textTransform: 'uppercase' }}>
                             Iniciar sesión
                         </Typography>
                         <Box
                             sx={{
                                 display: 'flex',
                                 flexDirection: 'column',
-                                rowGap: '1.5rem',
                             }}
                         >
-                            <Box>
+                            <Box sx={{ marginBottom: '1rem' }}>
                                 <TextField
                                     id="outlined-basic"
                                     label="Correo electrónico"
                                     variant="outlined"
                                     type='email'
                                     fullWidth
+                                    size='small'
+                                    InputLabelProps={{ style: { fontSize: '0.9rem' } }}
+                                    inputProps={{ style: { fontSize: '0.9rem' } }}
                                     {...register('email', { required: true })}
                                 />
-                                {errors.email && <Typography color={'red'}>Este campo es requerido</Typography>}
+                                {errors.email && <Typography color={'red'} variant='body2'>Este campo es requerido</Typography>}
                             </Box>
                             <Box>
                                 <TextField
                                     id="outlined-password"
                                     label="Contraseña"
+                                    size='small'
                                     variant="outlined"
                                     type={showPassword ? 'text' : 'password'}
                                     fullWidth
+                                    InputLabelProps={{ style: { fontSize: '0.9rem' } }}
+                                    inputProps={{ style: { fontSize: '0.9rem' } }}
                                     InputProps={{
                                         endAdornment: (
                                             <IconButton
@@ -84,22 +89,22 @@ const Login = () => {
                                     }}
                                     {...register('password', { required: true })}
                                 />
-                                {errors.password && <Typography color={'red'}>Este campo es requerido</Typography>}
+                                {errors.password && <Typography color={'red'} variant='body2'>Este campo es requerido</Typography>}
                             </Box>
-                            <Typography variant="h6" sx={{ color: 'black', textAlign: 'right' }}>
-                                <Link to="/register" style={{
+                            <Typography variant="body2" sx={{ color: 'black', textAlign: 'right', marginTop: '0.5rem' }}>
+                                <Link to="#" style={{
                                     color: 'black',
                                     textDecoration: 'none',
                                 }}>Olvidé mi contraseña</Link>
                             </Typography>
                         </Box>
-                        <FormControlLabel control={<Checkbox defaultChecked />} sx={{ width: 'fit-content', marginBottom: '1rem' }} label="Recuérdame" />
+                        <FormControlLabel control={<Checkbox defaultChecked size='small' />} sx={{ width: 'fit-content' }} label="Recuérdame" />
                         <Box
                             sx={{
-                                marginTop: '2rem',
+                                marginTop: '1rem',
                                 display: 'flex',
                                 flexDirection: 'column',
-                                rowGap: '1.5rem',
+                                rowGap: '1.3rem',
                             }}
                         >
                             <Button
@@ -107,7 +112,7 @@ const Login = () => {
                                 sx={{
                                     width: '100%',
                                     backgroundColor: '#941B0C',
-                                    padding: '0.5rem',
+                                    padding: '0.3rem',
                                     color: 'white',
                                     '&:hover': {
                                         backgroundColor: '#941B0C',
@@ -115,14 +120,14 @@ const Login = () => {
                                 }}
                                 type='submit'
                             >
-                                <Typography>Iniciar sesión</Typography>
+                                <Typography variant='body2'>Iniciar sesión</Typography>
                             </Button>
                             <Button
                                 variant="contained"
                                 sx={{
                                     width: '100%',
                                     backgroundColor: 'white',
-                                    padding: '0.5rem',
+                                    padding: '0.3rem',
                                     color: 'black',
                                     '&:hover': {
                                         backgroundColor: 'white',
@@ -130,14 +135,14 @@ const Login = () => {
                                 }}
                             >
                                 <Google sx={{ color: 'black' }} />
-                                <Typography sx={{ color: 'black', marginLeft: '0.5rem' }}>Iniciar sesión con Google</Typography>
+                                <Typography variant='body2' sx={{ color: 'black', marginLeft: '0.5rem' }}>Iniciar sesión con Google</Typography>
                             </Button>
                             <Button
                                 variant="contained"
                                 sx={{
                                     width: '100%',
                                     backgroundColor: 'black',
-                                    padding: '0.5rem',
+                                    padding: '0.3rem',
                                     color: 'white',
                                     '&:hover': {
                                         backgroundColor: 'black',
@@ -145,10 +150,10 @@ const Login = () => {
                                 }}
                             >
                                 <Apple sx={{ color: 'white' }} />
-                                <Typography sx={{ color: 'white', marginLeft: '0.5rem' }}>Iniciar sesión con Apple</Typography>
+                                <Typography variant='body2' sx={{ color: 'white', marginLeft: '0.5rem' }}>Iniciar sesión con Apple</Typography>
                             </Button>
                         </Box>
-                        <Typography variant="h6" sx={{ color: 'black', textAlign: 'center', marginTop: '2rem' }}>
+                        <Typography variant="body2" sx={{ color: 'black', textAlign: 'center', marginTop: '1.5rem' }}>
                             ¿No tienes una cuenta? <Link to="/register" style={{
                                 color: 'black',
                                 textDecoration: 'none',
