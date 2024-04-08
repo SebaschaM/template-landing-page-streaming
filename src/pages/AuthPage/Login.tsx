@@ -5,13 +5,14 @@ import { useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { Apple, Google, Visibility, VisibilityOff } from '@mui/icons-material';
 import { BackgroundImageStyle, Navbar } from '../../components';
+import { LoginFormInterface } from '../../interfaces/LoginForm';
 
 const Login = () => {
     const navigate = useNavigate();
-    const { register, handleSubmit, formState: { errors }, reset } = useForm();
+    const { register, handleSubmit, formState: { errors }, reset } = useForm<LoginFormInterface>();
     const [showPassword, setShowPassword] = useState(false);
 
-    const onSubmit = (data: any) => {
+    const onSubmit = (data: LoginFormInterface) => {
         console.log(data);
         navigate('/home');
         reset();

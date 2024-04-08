@@ -1,16 +1,17 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Box, Button, Card, Checkbox, Container, FormControl, FormControlLabel, IconButton, TextField, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { Visibility, VisibilityOff } from '@mui/icons-material';
 import { BackgroundImageStyle, Navbar } from '../../components';
+import { RegisterFormInterface } from '../../interfaces/RegisterForm';
 
 const Register = () => {
-    const { register, handleSubmit, formState: { errors }, reset } = useForm();
+    const { register, handleSubmit, formState: { errors }, reset } = useForm<RegisterFormInterface>();
     const [showPassword, setShowPassword] = useState(false);
     const [showPasswordConfirm, setShowPasswordConfirm] = useState(false);
 
-    const onSubmit = (data: any) => {
+    const onSubmit = (data: RegisterFormInterface) => {
         console.log(data);
         // Aquí deberías enviar los datos a tu backend para procesar el registro
         reset();
@@ -30,7 +31,7 @@ const Register = () => {
             <Navbar />
             <Container
                 sx={{
-                    marginTop: '2rem',
+                    marginTop: '2.4rem',
                 }}
             >
                 <FormControl
@@ -57,7 +58,7 @@ const Register = () => {
                         >
                             <Box sx={{ marginBottom: '1rem' }}>
                                 <TextField
-                                    id="outlined-basic"
+                                    id="outlined-basic-name"
                                     label="Nombre completo"
                                     variant="outlined"
                                     fullWidth
@@ -71,7 +72,7 @@ const Register = () => {
                             </Box>
                             <Box sx={{ marginBottom: '1rem' }}>
                                 <TextField
-                                    id="outlined-basic"
+                                    id="outlined-basic-email"
                                     label="Correo electrónico"
                                     variant="outlined"
                                     type='email'
@@ -110,7 +111,7 @@ const Register = () => {
                             </Box>
                             <Box>
                                 <TextField
-                                    id="outlined-password"
+                                    id="outlined-password-confirm"
                                     label="Confirma contraseña"
                                     size='small'
                                     variant="outlined"
@@ -123,15 +124,15 @@ const Register = () => {
                                             <IconButton
                                                 onClick={handleTogglePasswordVisibilityConfirm}
                                                 edge="end"
-                                                aria-label="toggle password visibility"
+                                                aria-label="toggle password visibility-confirm"
                                             >
                                                 {showPasswordConfirm ? <VisibilityOff /> : <Visibility />}
                                             </IconButton>
                                         ),
                                     }}
-                                    {...register('password', { required: true })}
+                                    {...register('passwordConfirm', { required: true })}
                                 />
-                                {errors.password && <Typography color={'red'} variant='body2'>Este campo es requerido</Typography>}
+                                {errors.passwordConfirm && <Typography color={'red'} variant='body2'>Este campo es requerido</Typography>}
                             </Box>
                         </Box>
                         <FormControlLabel
